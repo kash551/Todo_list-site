@@ -70,7 +70,7 @@
 
 # Testing
 ## User Story Testing
-## Bugs and Issues
+## Bugs and Issu
 
 # Deployment
 This project was deployed using Github and Heroku.
