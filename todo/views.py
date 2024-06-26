@@ -35,3 +35,7 @@ def remove(request, item_id):
     item.delete()
     messages.info(request, "item removed !!!")
     return redirect('todo')
+
+
+def profile_set_up(request):
+    

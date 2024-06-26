@@ -17,6 +17,13 @@ class To_do(models.Model):
         return self.title
 
 class user_profile(models.Model):
+    """
+    Model to represent extended auth User Class to add additional
+    profile information.
+    """
     user_id = IntegerField()
     username = models.CharField(max_length=30, unique=True)
-    max_spoons = IntegerField()
+    max_spoons = models.PositiveIntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Profile for {self.user.username}"
