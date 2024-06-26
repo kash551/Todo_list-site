@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
  
- STATUS = ((0, "Incomplete"), (1, "Complete"))
+STATUS = ((0, "Incomplete"), (1, "Complete"))
  
 class To_do(models.Model):
     title = models.CharField(max_length=100, unique=True)
