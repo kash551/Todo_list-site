@@ -3,7 +3,7 @@ from django.utils import timezone
  
  STATUS = ((0, "Incomplete"), (1, "Complete"))
  
-class Todo(models.Model):
+class To_do(models.Model):
     title = models.CharField(max_length=100, unique=True)
     details = models.TextField()
     user_id = user_profile.user_id
