@@ -37,5 +37,3 @@ def remove(request, item_id):
     return redirect('todo')
 
 
-def profile_set_up(request):
-    
