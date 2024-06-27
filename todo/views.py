@@ -7,7 +7,7 @@ from django.contrib import messages
 from .forms import TodoForm
 from .models import Todo
 from .forms import UserProfileForm
-from .models import user_profile
+from .models import UserProfile
 ###############################################
  
  

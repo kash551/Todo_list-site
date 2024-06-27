@@ -2,9 +2,8 @@ from django.db import models
 from django.utils import timezone
 
 STATUS = ((0, "Incomplete"), (1, "Complete"))
-<<<<<<< HEAD
  
-class To_Do(models.Model):
+class Todo(models.Model):
     title = models.CharField(max_length=100, unique=True)
     details = models.TextField()
     user_id = user_profile.user_id
@@ -12,8 +11,6 @@ class To_Do(models.Model):
     spoons_required = IntegerField() 
     date = models.DateTimeField(default=timezone.now)
     status = models.IntegerField(choices=STATUS, default=0)
-=======
->>>>>>> e9ed442c774747244f216f26bd6654863a2293d1
 
 class UserProfile(models.Model):
     """
