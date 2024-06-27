@@ -37,3 +37,13 @@
                   0 6px 20px 0 rgba(0,0,0,0.36);
     }
     </style>
+
+</head>
+ 
+<body  class="container-fluid">
+ 
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-info">
+    <strong>{{message}}</strong>
+  </div>
