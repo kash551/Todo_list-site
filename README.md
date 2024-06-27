@@ -1,17 +1,83 @@
 <h1 align='center'>ToDo List</h1>
 
 # About
- 
+ <p>Our to-do list app is designed to empower individuals living with chronic conditions by integrating the Spoon Theory into daily planning. By tracking the expenditure of "spoons" (a metaphor for energy), users can effectively plan their day around their average amount of spoons, ensuring they allocate their energy wisely across various tasks.
+      <br>
+      Key features include:
+      <br>
+      <ul>
+        <li>Customizable Spoon Allocation: Users can assign a specific number of spoons to each task, reflecting the unique energy requirements of their daily activities.</li>
+        <li>Visual Energy Tracking: An intuitive interface displays the remaining spoons after each task, providing real-time insights into energy management.</li>
+        <li>Future Planning: Users can schedule tasks for future dates, allowing for long-term planning and anticipation of energy needs.</li>
+      </ul>
+      Designed with simplicity and ease of use in mind, our app aims to reduce the mental load associated with energy management, enabling individuals to focus on what matters most. Whether you're new to the Spoon Theory or an experienced practitioner, our app offers tools to enhance your daily routine and support a healthier, more balanced lifestyle.
+      </p>
 
 # UX
 ## User Stories
-
+<p>As a user I would like to be able to create my own personal tasks.
+Acceptance criteria:
+<ul>
+<li>Ability to create a task</li>
+<li>Contains: title, details, spoons required, status and date created.</li>
+</ul>
+As a user I would like to be able to delete tasks that I have created.
+Acceptance criteria:
+<ul>
+<li>Ability to delete a task from as a user</li>
+<li>Deleted tasks removed from database</li>
+</ul>
+As a user I would like to visibly see that my task has been completed.
+Acceptance criteria:
+<ul>
+<li>Ability to see completed tasks</li>
+<li>Completed tasks remain in the database</li>
+</ul>
+As a user I would like to see when my task is due and set my own date.
+Acceptance criteria:
+<ul>
+<li>Ability to see when task is due</li>
+<li>Ability to set due date</li>
+</ul>
+As a user I would like to be able to create my own account.
+Acceptance criteria:
+<ul>
+<li>Ability to create an account which gets saved in the database so that I can login as me again later.</li>
+<li>Ability to set my average number of daily spoons</li>
+</ul>
+As a user I would like to be able to view all my personal tasks that I have set.
+Acceptance criteria:
+<ul>
+<li>Ability to see all my tasks when logged in.</li>
+</ul>
+As a user I would like to know how many spoons I have left after fulfilling daily tasks.
+Acceptance criteria:
+<ul>
+<li>Ability to see how many spoons I have left for the day.</li>
+<li>Spoons remaining reduces by the increment of tasks completed that day</li>
+<li>Spoons resets each day</li>
+</ul>
+As a user I would like to be able to set how many spoons a task takes to complete
+Acceptance criteria:
+<ul>
+<li>Ability to set how many spoons a task will require.</li>
+<li>Spoons remaining reduces by the increment of tasks as they are set to complete</li>
+</ul>
+</p>
 # Scope
 ## **Features**
 ### **Home page**
 ### **Login/Register page**
 
 # Wireframes
+<p> Wireframe for login/register page </p>
+<img src="readme_images/image.png"></img>
+<br>
+<p> Wireframe for Index page </p>
+<img src="readme_images/image1.png"></img>
+<br>
+<p> Wireframe for My To-Do List page </p>
+<img src="readme_images/image2.png"></img>
 
 # Database schema
 ## Models
