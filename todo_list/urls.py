@@ -19,7 +19,7 @@ from django.urls import path, include
 from todo import views
 
 urlpatterns = [
-    path(' ', views.index, name="todo"),
+    path('', views.index, name="index"), # Home Page
     path('del/<str:item_id>', views.remove, name="del"),
     path('admin/', admin.site.urls),
     path("accounts/", include("accounts.urls")),
