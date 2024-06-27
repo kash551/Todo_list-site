@@ -15,7 +15,55 @@
 
 # UX
 ## User Stories
-
+<p>As a user I would like to be able to create my own personal tasks.
+Acceptance criteria:
+<ul>
+<li>Ability to create a task</li>
+<li>Contains: title, details, spoons required, status and date created.</li>
+</ul>
+As a user I would like to be able to delete tasks that I have created.
+Acceptance criteria:
+<ul>
+<li>Ability to delete a task from as a user</li>
+<li>Deleted tasks removed from database</li>
+</ul>
+As a user I would like to visibly see that my task has been completed.
+Acceptance criteria:
+<ul>
+<li>Ability to see completed tasks</li>
+<li>Completed tasks remain in the database</li>
+</ul>
+As a user I would like to see when my task is due and set my own date.
+Acceptance criteria:
+<ul>
+<li>Ability to see when task is due</li>
+<li>Ability to set due date</li>
+</ul>
+As a user I would like to be able to create my own account.
+Acceptance criteria:
+<ul>
+<li>Ability to create an account which gets saved in the database so that I can login as me again later.</li>
+<li>Ability to set my average number of daily spoons</li>
+</ul>
+As a user I would like to be able to view all my personal tasks that I have set.
+Acceptance criteria:
+<ul>
+<li>Ability to see all my tasks when logged in.</li>
+</ul>
+As a user I would like to know how many spoons I have left after fulfilling daily tasks.
+Acceptance criteria:
+<ul>
+<li>Ability to see how many spoons I have left for the day.</li>
+<li>Spoons remaining reduces by the increment of tasks completed that day</li>
+<li>Spoons resets each day</li>
+</ul>
+As a user I would like to be able to set how many spoons a task takes to complete
+Acceptance criteria:
+<ul>
+<li>Ability to set how many spoons a task will require.</li>
+<li>Spoons remaining reduces by the increment of tasks as they are set to complete</li>
+</ul>
+</p>
 # Scope
 ## **Features**
 ### **Home page**
