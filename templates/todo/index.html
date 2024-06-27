@@ -7,10 +7,16 @@
   <title>{{title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <!--style-->
    <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
     .card {
    
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),
@@ -18,10 +24,13 @@
      background: lightpink;
      margin-bottom : 5%;
      border-radius: 25px;
-     padding : 2%;
+     padding: 3%;
      overflow: auto;
      resize: both;
      text-overflow: ellipsis;
+     text-align: center;
+     max-width: 90%;
+     margin-left: 5%;
     }
     .card:hover{
       background: lightblue;
@@ -36,14 +45,136 @@
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
                   0 6px 20px 0 rgba(0,0,0,0.36);
     }
+    .footer {
+      display:flex;
+    }
+ 
     </style>
 
 </head>
  
-<body  class="container-fluid">
- 
-  {% if messages %}
-  {% for message in messages %}
-  <div class="alert alert-info">
-    <strong>{{message}}</strong>
+<body  >
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">My To-Do List</a></li>
+          <li><a href="#">My Account</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div id="about" class="card">
+    <h3>About Spoons Theory</h3>
+    <p>Christine Miserandino introduced the Spoon Theory to illustrate the concept of limited energy in people with chronic illnesses. Unlike healthy individuals who start their day with an unlimited supply of energy ("spoons"), those with chronic conditions must manage their energy carefully, allocating it to various tasks throughout the day. Each task consumes a certain number of spoons, and once they're spent, they cannot be replaced.
+      <br>
+       This theory emphasizes the conscious decision-making and planning required for daily activities, highlighting the stark contrast between the lives of the healthy and those living with chronic illnesses. The Spoon Theory serves as a metaphorical tool for understanding the challenges faced by individuals with chronic conditions, encouraging empathy and awareness.</p>
+    <br>
   </div>
+  <div class="card">
+    <h3>Our App</h3>
+    <p>Our to-do list app is designed to empower individuals living with chronic conditions by integrating the Spoon Theory into daily planning. By tracking the expenditure of "spoons" (a metaphor for energy), users can effectively plan their day around their average amount of spoons, ensuring they allocate their energy wisely across various tasks.
+      <br>
+      Key features include:
+      <br>
+      <ul>
+        <li>Customizable Spoon Allocation: Users can assign a specific number of spoons to each task, reflecting the unique energy requirements of their daily activities.</li>
+        <li>Visual Energy Tracking: An intuitive interface displays the remaining spoons after each task, providing real-time insights into energy management.</li>
+        <li>Future Planning: Users can schedule tasks for future dates, allowing for long-term planning and anticipation of energy needs.</li>
+      </ul>
+      Designed with simplicity and ease of use in mind, our app aims to reduce the mental load associated with energy management, enabling individuals to focus on what matters most. Whether you're new to the Spoon Theory or an experienced practitioner, our app offers tools to enhance your daily routine and support a healthier, more balanced lifestyle.
+      </p>
+   </div>
+   <div class="card">
+      <h3>FAQ</h3>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Who came up with Spoons Theory?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Christine Miserandino came up with it, you can read her article <a href="https://cdn.totalcomputersusa.com/butyoudontlooksick.com/uploads/2010/02/BYDLS-TheSpoonTheory.pdf" target="_blank" rel="noopener" aria-label="Visit the article (opens in a new tab)">"but you don't look sick" </a> which we have attached here.
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How many spoons should I set up my profile with per day?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+             We suggest starting out with 12 spoons, but your energy levels are personal to you and you may find that 12 is too many or too few. Ideally you would think about yo9ur average day and calcualte how many spoons you can manage on average at set your daily spoon limit based on that calculation. 
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What if I need to do more tasks than I have spoons for?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              Ideally you would use the app to plan around this eventuality, however this is not always a possibilty. We would advise against usisng too many extra spoons as you are simply borrowing them from your next day. At the current time the app will not be able to carry over thse depletions to the next day's spoon count, but we would suggest taking it easy the next day to recover from the over exertion.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">© Brand</a>
+    
+      <ul class="nav navbar-nav footer">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+              aria-label="Visit our Facebook page (opens in a new tab)">
+              <i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+              aria-label="Visit our Twitter page (opens in a new tab)">
+              <i class="fa-brands fa-twitter-square"></i></a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+              aria-label="Visit our YouTube page (opens in a new tab)">
+              <i class="fa-brands fa-youtube-square"></i></a>
+      </li>
+      <li>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+              aria-label="Visit our Instagram page (opens in a new tab)">
+              <i class="fa-brands fa-instagram"></i></a>
+      </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</body>
+</html>
