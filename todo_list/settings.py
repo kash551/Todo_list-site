@@ -26,9 +26,7 @@ SECRET_KEY = 'django-insecure-nj1$h=lcr@+6roh6f5(xb^b@3ja9wbim*c5o15zh4ysb&6i+7b
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://*.gitpod.io',
-    'localhost',
-    '127.0.0.1',
+    '8000-kash551-todolistsite-94225hwqw36.ws-eu114.gitpod.io'
 ]
 
 # Post Login Redirect
