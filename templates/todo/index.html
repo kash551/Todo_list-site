@@ -22,6 +22,7 @@
      overflow: auto;
      resize: both;
      text-overflow: ellipsis;
+     text-align: center;
     }
     .card:hover{
       background: lightblue;
@@ -36,22 +37,27 @@
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
                   0 6px 20px 0 rgba(0,0,0,0.36);
     }
+ 
     </style>
 
 </head>
  
 <body  class="container-fluid">
- 
+
   {% if messages %}
   {% for message in messages %}
-  <div class="alert alert-info">
-    <strong>{{message}}</strong>
-  </div>
+    <div class="alert alert-info">
+      <strong>{{message}}</strong>
+    </div>
 
-  <div id="about">
+  <div id="about" class="card">
     <h3>About Spoons Theory</h3>
-    <p>Christine Miserandino introduced the Spoon Theory to illustrate the concept of limited energy in people with chronic illnesses. Unlike healthy individuals who start their day with an unlimited supply of energy ("spoons"), those with chronic conditions must manage their energy carefully, allocating it to various tasks throughout the day. Each task consumes a certain number of spoons, and once they're spent, they cannot be replaced. This theory emphasizes the conscious decision-making and planning required for daily activities, highlighting the stark contrast between the lives of the healthy and those living with chronic illnesses. The Spoon Theory serves as a metaphorical tool for understanding the challenges faced by individuals with chronic conditions, encouraging empathy and awareness.</p>
+    <p>Christine Miserandino introduced the Spoon Theory to illustrate the concept of limited energy in people with chronic illnesses. Unlike healthy individuals who start their day with an unlimited supply of energy ("spoons"), those with chronic conditions must manage their energy carefully, allocating it to various tasks throughout the day. Each task consumes a certain number of spoons, and once they're spent, they cannot be replaced.
+      <br>
+       This theory emphasizes the conscious decision-making and planning required for daily activities, highlighting the stark contrast between the lives of the healthy and those living with chronic illnesses. The Spoon Theory serves as a metaphorical tool for understanding the challenges faced by individuals with chronic conditions, encouraging empathy and awareness.</p>
     <br>
+  </div>
+  <div class="card">
     <h4>Our App</h4>
     <p>Our to-do list app is designed to empower individuals living with chronic conditions by integrating the Spoon Theory into daily planning. By tracking the expenditure of "spoons" (a metaphor for energy), users can effectively plan their day around their average amount of spoons, ensuring they allocate their energy wisely across various tasks.
       <br>
@@ -64,6 +70,8 @@
       </ul>
       Designed with simplicity and ease of use in mind, our app aims to reduce the mental load associated with energy management, enabling individuals to focus on what matters most. Whether you're new to the Spoon Theory or an experienced practitioner, our app offers tools to enhance your daily routine and support a healthier, more balanced lifestyle.
       </p>
+   </div>
+   <div class="card">
       <h3>FAQ</h3>
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
