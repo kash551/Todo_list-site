@@ -42,7 +42,7 @@
       padding: 3%;
       background: pink;
       max-width: 90%;
-      margin-bottom : 5%;
+      margin-bottom : 80px;
       margin-left: 5%;
       border-radius: 25px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),
@@ -50,6 +50,7 @@
     }
     .footer {
       display:flex;
+     
     }
  
     </style>
@@ -57,7 +58,7 @@
 </head>
  
 <body  >
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -79,6 +80,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+<br>
 
 {% if messages %}
 {% for message in messages %}
@@ -91,6 +93,7 @@
 <center class="row">
   <h1><i>__TODO LIST__</i></h1>
   <hr />
+  <h3> Spoons remaining: {{UserProfile.max_spoons}}</h3>
 </center>
 
 <div class="row">
@@ -128,7 +131,7 @@
   </div>
 </div>
 </div>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
      <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
@@ -156,6 +159,7 @@
              <i class="fa-brands fa-instagram"></i></a>
          </li>
        </ul>
+       <br>
      </div><!-- /.navbar-collapse -->
      </div><!-- /.container-fluid -->
    </nav>
