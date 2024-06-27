@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nj1$h=lcr@+6roh6f5(xb^b@3ja9wbim*c5o15zh4ysb&6i+7b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kash551-todolistsite-94225hwqw36.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-kash551-todolistsite-94225hwqw36.ws-eu114.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
@@ -81,6 +81,10 @@ DATABASES = {
     }
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.8000-kash551-todolistsite-94225hwqw36.ws-eu114.gitpod.io",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
