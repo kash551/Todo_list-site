@@ -70,6 +70,14 @@ Acceptance criteria:
 ### **Login/Register page**
 
 # Wireframes
+<p> Wireframe for login/register page </p>
+<img src="readme_images/image.png"></img>
+<br>
+<p> Wireframe for Index page </p>
+<img src="readme_images/image1.png"></img>
+<br>
+<p> Wireframe for My To-Do List page </p>
+<img src="readme_images/image2.png"></img>
 
 # Database schema
 ## Models
