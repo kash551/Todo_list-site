@@ -1,7 +1,17 @@
 <h1 align='center'>ToDo List</h1>
 
 # About
- 
+ <p>Our to-do list app is designed to empower individuals living with chronic conditions by integrating the Spoon Theory into daily planning. By tracking the expenditure of "spoons" (a metaphor for energy), users can effectively plan their day around their average amount of spoons, ensuring they allocate their energy wisely across various tasks.
+      <br>
+      Key features include:
+      <br>
+      <ul>
+        <li>Customizable Spoon Allocation: Users can assign a specific number of spoons to each task, reflecting the unique energy requirements of their daily activities.</li>
+        <li>Visual Energy Tracking: An intuitive interface displays the remaining spoons after each task, providing real-time insights into energy management.</li>
+        <li>Future Planning: Users can schedule tasks for future dates, allowing for long-term planning and anticipation of energy needs.</li>
+      </ul>
+      Designed with simplicity and ease of use in mind, our app aims to reduce the mental load associated with energy management, enabling individuals to focus on what matters most. Whether you're new to the Spoon Theory or an experienced practitioner, our app offers tools to enhance your daily routine and support a healthier, more balanced lifestyle.
+      </p>
 
 # UX
 ## User Stories
