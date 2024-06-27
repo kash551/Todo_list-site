@@ -31,6 +31,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
+# Post Login Redirect
+LOGIN_REDIRECT_URL = "/"
 
 # Application definition
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
     'todo',
 ]
 
@@ -59,7 +62,7 @@ ROOT_URLCONF = 'todo_list.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,7 +92,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.gitpod.io',
     'https://*.herokuapp.com'
     'http://localhost:8000',
-    'http://127.0.0.1',
+    'http://127.0.0.1:8000',
 ]
 
 
