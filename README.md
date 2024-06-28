@@ -96,11 +96,6 @@ Using DBDiagram.io, we were able to effectively map out the relationships betwee
 
 <img src="readme_images/profilemodel.png"></img>
 
-# Surface
-## Design
-### Chosen color
-### font
-
 # Technologies Used
 ## Languages
 
