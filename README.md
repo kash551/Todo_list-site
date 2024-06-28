@@ -155,5 +155,32 @@ To create a new repository I took the following steps:
 - To get the Django framework installed and set up I followed the Code institutes [Django Blog cheatsheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
 
 # Credits
+<h3>content</h3>
+<ul>
+<li>The icons for the social media buttons were sourced from Font Awesome.</li>
+<li>Some of  the content was sourced using sourced using chatgpt and Phind.com.</li>
+<li>Content information taken from the websites linked below:
+<ul>
+<li>https://cdn.totalcomputersusa.com/butyoudontlooksick.com/uploads/2010/02/BYDLS-TheSpoonTheory.pdf</li>
+<li>https://www.healthline.com/health/spoon-theory-chronic-illness-explained-like-never-before#1</li>
+</ul>
+<li>Instructions and inspiration on how to implement a TO-Do List python webapp instructions by geeksforgeeks, linked below:
+https://www.geeksforgeeks.org/python-todo-webapp-using-django/</li>
+<li>inspiration for how to use allauth to create a user registration form was taken from crunchydata's blog and Django Login, Logout, Signup, Password Change, and Password Reset
+By Will Vincent linked below:
+<ul>
+<li>https://www.crunchydata.com/blog/building-a-user-registration-form-with-djangos-built-in-authentication</li>
+<li>https://learndjango.com/tutorials/django-login-and-logout-tutorial</li></li>
+</ul>
+</ul>
+
 ## Media
+
+<ul>
+<li>Linked in the FAQ section is an article on spoons theory called The Spoon Theory
+by Christine Miserandino. Linked below:
+<ul><li>https://cdn.totalcomputersusa.com/butyoudontlooksick.com/uploads/2010/02/BYDLS-TheSpoonTheory.pdf</li>
+</ul>
+</ul>
+
 ## Acknowledgement
