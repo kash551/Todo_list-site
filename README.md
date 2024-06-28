@@ -138,6 +138,18 @@ Acceptance criteria:
 ## User Story Testing
 ## Bugs and Issues
 
+<p>The diallowed host errors below were fixed easily by adding the 8000 port to allowed hosts to the settings.py file and commiting it to the main.</p>
+<img src="readme_images/image3.png"></img>
+
+<p>We had a couple of issues at the start to multiple people working on main at the same time, but we figured that out early and moved to seperate branches.</p>
+
+<p> Log error with heroku saying  NameError: name 'user_profile' is not defined, having googled the error we discovered it was either a spelling error or a ordering issue in the models.py file, having checked the spelling and moved the UserProfile model to the top the error message disappeared.</p>
+
+<p> ImportError: cannot import name 'Todo' from 'todo.models' (/tmp/build_981df2ca/todo/models.py). Did you mean: 'ToDo'? Implementing the suggested change to ToDo fixed this error</p>
+
+<p>To fix the error below we removed a duplicate Todo model which must have come from a merge issue and added a userprofileform to forms.py</p>
+<img src="readme_images/image4.png"></img>
+
 # Deployment
 This project was deployed using Github and Heroku.
 
