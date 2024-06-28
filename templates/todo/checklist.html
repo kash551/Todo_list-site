@@ -94,22 +94,23 @@
 <center class="row">
   <h1><i>__TODO LIST__</i></h1>
   <hr />
-  <h3> Spoons remaining: {{UserProfile.max_spoons}}</h3>
+  {% for item in items %}
+  <h3> Remaining spoons: {{item.remaining_spoons}}</h3>
 </center>
 
 <div class="row">
 
   <div class="col-md-8">
 
-    {% for i in list %}
+   
     <div class="card">
-      <center><b>{{i.title}}</b></center>
+      <center><b>{{item.title}}</b></center>
       <hr/>
-      {{i.date}}
+      {{item.date}}
       <hr/>
-      {{i.details}}
+      {{item.details}}
       <hr/>
-      {{i.spoons_required}}
+     <p> Spoons required: {{item.spoons_required}}</p>
       <br />
       <br />
       <form action="/del/{{i.id}}" method="POST" style=" padding-right: 4%; padding-bottom: 3%;">
