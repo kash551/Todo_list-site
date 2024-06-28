@@ -26,11 +26,17 @@ SECRET_KEY = 'django-insecure-nj1$h=lcr@+6roh6f5(xb^b@3ja9wbim*c5o15zh4ysb&6i+7b
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-kash551-todolistsite-94225hwqw36.ws-eu114.gitpod.io'
+    'https://*.gitpod.io',
+    'localhost',
+    '127.0.0.1',
+    'https://*.herokuapp.com'
 ]
 
 # Post Login Redirect
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = '/'
+
+# If user isn't logged in, they'll be redirected here.
+LOGIN_URL = '/accounts/login/'
 
 # Application definition
 

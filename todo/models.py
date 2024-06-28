@@ -19,7 +19,7 @@ class UserProfile(models.Model):
     """
     user_id = models.IntegerField(unique=True)  # Changed to models.IntegerField
     username = models.CharField(max_length=30, unique=True)
-    max_spoons = models.PositiveIntegerField(null=True, blank=True)
+    max_spoons = models.PositiveIntegerField(blank=True, default=12)  # Changed to models.PositiveIntegerField
 
     def __str__(self):
         return f"Profile for {self.username}"
