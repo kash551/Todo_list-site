@@ -22,7 +22,7 @@ urlpatterns = [
     path('', views.index, name="index"), # Home Page
     path('del/<str:item_id>', views.remove, name="del"),
     path('admin/', admin.site.urls),
-    path("checklist/", views.checklist, name="checklist"),
+    path("checklist/", views.Checklist.as_view(), name="checklist"),
     path("accounts/", include("accounts.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
 ]

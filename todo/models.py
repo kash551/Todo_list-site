@@ -2,15 +2,6 @@ from django.db import models
 from django.utils import timezone
 
 STATUS = ((0, "Incomplete"), (1, "Complete"))
- 
-# class Todo(models.Model):
-   # title = models.CharField(max_length=100, unique=True)
-    #details = models.TextField()
-    # user_id = user_profile.user_id
-    # username = user_profile.username
-    # spoons_required = IntegerField() 
-    #date = models.DateTimeField(default=timezone.now)
-    #status = models.IntegerField(choices=STATUS, default=0)
 
 class UserProfile(models.Model):
     """

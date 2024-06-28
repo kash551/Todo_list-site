@@ -29,7 +29,8 @@ ALLOWED_HOSTS = [
     'https://*.gitpod.io',
     'localhost',
     '127.0.0.1',
-    'https://*.herokuapp.com'
+    'https://*.herokuapp.com',
+    '8000-kash551-todolistsite-z6xc0kdysad.ws-eu114.gitpod.io'
 ]
 
 # Post Login Redirect
