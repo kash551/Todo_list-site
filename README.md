@@ -80,9 +80,21 @@ Acceptance criteria:
 <img src="readme_images/image2.png"></img>
 
 # Database schema
+<img src="readme_images/database.png"></img>
+Using DBDiagram.io, we were able to effectively map out the relationships between various database entities, which significantly enhanced our understanding of how these entities interact within the system. This tool allowed us to visually represent the connections between different tables through the use of arrows, indicating the direction and nature of the relationships. By doing so, it became much clearer how data flows from one table to another, facilitating a more intuitive grasp of the overall database structure.
+
 ## Models
+### **User Model** 
+
+<img src="readme_images/usermodel.png"></img>
+
+
 ### **To_do Model**
+<img src="readme_images/todomodel.png"></img>
+
 ### **user_profile Model**
+
+<img src="readme_images/profilemodel.png"></img>
 
 # Surface
 ## Design
