@@ -23,13 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nj1$h=lcr@+6roh6f5(xb^b@3ja9wbim*c5o15zh4ysb&6i+7b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://*.gitpod.io',
     'localhost',
     '127.0.0.1',
-    'https://*.herokuapp.com',
+    '.herokuapp.com',
     '8000-kash551-todolistsite-z6xc0kdysad.ws-eu114.gitpod.io'
 ]
 
