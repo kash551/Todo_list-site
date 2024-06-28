@@ -13,7 +13,7 @@ from .models import UserProfile
 @login_required
 def index(request):
  
-    item_list = Todo.objects.filter(user=request.user).order_by("-date")
+    item_list = Todo.objects.filter(user_profile__user=request.user).order_by("-date")
     if request.method == "POST":
         form = TodoForm(request.POST)
         if form.is_valid():
