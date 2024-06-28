@@ -26,12 +26,16 @@ def index(request):
  
 
 class Checklist(View):
-
     def get(self, request):
         items = Todo.objects.all()
         form = TodoForm()
-        return render(request, "todo/checklist.html",{"items": items,"form": form})
-
+        
+        # Calculate remaining spoons for each item
+        for item in items:
+            user_profile = UserProfile.objects.get(user_id=item.user_profile.user_id)
+            item.remaining_spoons = user_profile.max_spoons - item.spoons_required
+        
+        return render(request, "todo/checklist.html", {"items": items, "form": form})
 
     def post(self, request):
         """What happens for a POST request"""
@@ -39,7 +43,6 @@ class Checklist(View):
 
         if form.is_valid():
             form = form.save()
-            form.save()
             return redirect('todo/checklist.html')
         else:
             form = TodoForm()
