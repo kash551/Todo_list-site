@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
  
 # import todo form and models
@@ -10,7 +11,6 @@ from .models import Todo
 from .forms import UserProfileForm
 from .models import UserProfile
 ###############################################
- 
  
 def index(request):
  
@@ -37,6 +37,5 @@ def remove(request, item_id):
     messages.info(request, "item removed !!!")
     return redirect('todo')
 
-@login_required
 def checklist(request):
-    return render(request, 'todo/checklist.html',)
+    return render(request, 'todo/checklist.html')
