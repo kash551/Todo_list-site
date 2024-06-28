@@ -94,6 +94,7 @@
 <center class="row">
   <h1><i>__TODO LIST__</i></h1>
   <hr />
+  {% for item in items %}
   <h3> Remaining spoons: {{item.remaining_spoons}}</h3>
 </center>
 
@@ -101,7 +102,7 @@
 
   <div class="col-md-8">
 
-    {% for item in items %}
+   
     <div class="card">
       <center><b>{{item.title}}</b></center>
       <hr/>
